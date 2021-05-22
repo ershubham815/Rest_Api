@@ -1,0 +1,24 @@
+package com.springrest.service;
+
+import java.util.*;
+
+import com.springrest.entities.Course;
+
+
+public class CourseServiceImpl implements CourseService {
+	
+	List<Course> list;
+	public CourseServiceImpl() {
+		
+		list=new ArrayList<Course>();
+		list.add(new Course(112,"java web development","full guide for begineers"));
+		list.add(new Course(231,"react application","full guide for react developers"));
+	}
+
+	
+	@Override
+	public List<Course> getCourses(){
+		return list;
+	}
+
+}

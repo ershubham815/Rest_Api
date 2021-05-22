@@ -1,0 +1,9 @@
+package com.springrest.service;
+
+import java.util.*;
+
+public interface CourseService {
+
+	
+	public List<Course> getCourses();
+}

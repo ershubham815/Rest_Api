@@ -1,0 +1,22 @@
+package com.springrest.service;
+
+import java.util.*;
+
+import com.springrest.entities.Course;
+
+
+public class CourseServiceImpl implements CourseService {
+	
+	List<Course> list;
+	public CourseServiceImpl() {
+		
+		list=new ArrayList<>();
+		list.add(new Course(1,"hello world","test this book"));
+		list.add(new Course(2,"pagal khana","faltu book"));
+	
+	@Override
+	public List<Course> getCourses(){
+		return list;
+	}
+
+}

@@ -1,0 +1,99 @@
+package com.springrest.service;
+
+import java.util.*;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.springrest.Dao.CourseDao;
+import com.springrest.entities.Course;
+
+@Service
+public class CourseServiceImpl implements CourseService {
+	
+//	List<Course> list;
+	@Autowired
+	private CourseDao courseDao;
+	
+	public CourseServiceImpl() {
+		
+//		list=new ArrayList<Course>();
+//		list.add(new Course(112,"java web development","full guide for begineers"));
+//		list.add(new Course(231,"react application","full guide for react developers"));
+		
+		
+	}
+
+	
+	@Override
+	public List<Course> getCourses(){
+		return list;
+	}
+	
+	@Override
+	public Course getCourse(long courseId)
+	{
+//		Course c= null;
+//		
+//		for(Course course : list)
+//		{
+//			if(course.getId()==courseId)
+//			{
+//				c=course;
+//				break;
+//			}
+//		}
+//		return c;
+		
+		
+		
+	}
+
+
+	@Override
+	public Course addCourse(Course course) {
+//		list.add(course);
+//		return course;
+		
+		
+		
+	}
+
+
+	@Override
+	public Course updateCourse(Course course) {
+//		
+//		for(Course course2 : list)
+//		{
+//			if(course2.getId()==course.getId())
+//			{
+//				course2.setTitle(course.getTitle());
+//				course2.setDescription(course.getDescription());
+//			}
+//		}
+//		
+//		return course;
+		
+		
+		
+	}
+
+
+	@Override
+	public Course deletCourse(long courseId) {
+//		
+//		Course e=null;
+//		for(Course course: list)
+//		{
+//			if(course.getId()==courseId)
+//			{
+//				e=course;
+//				list.remove(course);
+//			}
+//		}
+//		return e;
+		
+		
+	}
+
+}
